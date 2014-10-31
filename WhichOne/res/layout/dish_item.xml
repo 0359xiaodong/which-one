@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10.0dp" >
+
+    <ImageView
+        android:id="@+id/dish_item_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="10.0dp"
+        android:background="@drawable/default_dish" />
+
+    <TextView
+        android:id="@+id/dish_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/dish_item_image"
+        android:layout_toRightOf="@id/dish_item_image"
+        android:textSize="16.0sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/dish_item_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/dish_item_image"
+        android:layout_toRightOf="@id/dish_item_image" />
+
+    <ImageView
+        android:id="@+id/dish_item_delete"
+        android:layout_width="40.0dp"
+        android:layout_height="40.0dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/delete" />
+
+</RelativeLayout>

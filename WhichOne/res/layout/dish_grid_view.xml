@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dish_grid_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <GridView
+        android:id="@+id/dish_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5.0dp"
+        android:horizontalSpacing="5.0dp"
+        android:numColumns="2"
+        android:verticalSpacing="5.0dp" >
+    </GridView>
+
+</RelativeLayout>

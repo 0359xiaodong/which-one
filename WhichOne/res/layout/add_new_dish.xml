@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/add_image_layout"
+            android:layout_width="140.0dp"
+            android:layout_height="140.0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginTop="10.0dp" >
+
+            <ImageButton
+                android:id="@+id/add_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/add_image"
+                android:src="@drawable/default_dish" />
+
+            <TextView
+                android:id="@+id/add_image_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/add_image" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/add_dish_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dp"
+            android:layout_toRightOf="@id/add_image_layout"
+            android:hint="@string/dish_name"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/add_dish_des_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/add_image_layout"
+            android:layout_below="@id/add_dish_name_edit"
+            android:layout_marginTop="5.0dp"
+            android:layout_toRightOf="@id/add_image_layout"
+            android:gravity="start"
+            android:hint="@string/dish_des" />
+
+        <Button
+            android:id="@+id/add_dish_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/add_dish_des_edit"
+            android:layout_marginTop="20.0dp"
+            android:text="@string/add" />
+    </RelativeLayout>
+
+</ScrollView>

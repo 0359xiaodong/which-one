@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_shake"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_menu_shake"
+        android:title="@string/random_dish"/>
+    <item
+        android:id="@+id/action_add"
+        android:orderInCategory="2"
+        android:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/add"/>
+
+</menu>
